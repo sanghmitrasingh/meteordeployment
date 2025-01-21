@@ -1,24 +1,24 @@
 Date: 21 Jan 2025
 
-### Step-by-Step Guide to Deploy a Meteor 3.0.4 App to Heroku
+Step-by-Step Guide to Deploy a Meteor 3.0.4 App to Heroku
 
-1. **Create a Heroku App**  
+1. Create a Heroku App
    Log in to your Heroku account and create a new app.
 
-2. **Connect Your GitHub Repository**  
-   - Navigate to the **Deploy** section of your Heroku app dashboard.  
-   - Under the **Deployment method**, select **GitHub** and connect your repository.  
+2. Connect Your GitHub Repository
+   - Navigate to the Deploy section of your Heroku app dashboard.  
+   - Under the Deployment method, select GitHub and connect your repository.  
    - (Optional) Enable automatic deployment for continuous updates.
 
-3. **Add the Buildpack**  
-   - Go to the **Settings** section of your Heroku app.  
-   - Under **Buildpacks**, add:  
+3. Add the Buildpack
+   - Go to the Settings section of your Heroku app.  
+   - Under Buildpacks, add:  
      ```
      https://github.com/AdmitHub/meteor-buildpack-horse.git
      ```
 
-4. **Set Config Vars**  
-   - Still in the **Settings** section, add the following environment variables under **Config Vars**:  
+4. Set Config Vars
+   - Still in the Settings section, add the following environment variables under Config Vars:  
      - `MONGOLAB_URI`  
      - `MONGO_URL`  
      - `ROOT_URL`: Set this to your app's URL in the format:  
@@ -27,8 +27,8 @@ Date: 21 Jan 2025
        ```  
      - Ensure that `MONGO_URL` is identical to `MONGOLAB_URI`.
 
-5. **Deploy the App**  
-   - Return to the **Deploy** section of your Heroku app dashboard.  
-   - Scroll down to **Manual Deploy**, select the desired branch, and click **Deploy Branch**.  
+5. Deploy the App
+   - Return to the Deploy section of your Heroku app dashboard.  
+   - Scroll down to Manual Deploy, select the desired branch, and click **Deploy Branch**.  
 
 Your Meteor app should now be live on Heroku!

@@ -29,6 +29,6 @@ Step-by-Step Guide to Deploy a Meteor 3.0.4 App to Heroku
 
 5. Deploy the App
    - Return to the Deploy section of your Heroku app dashboard.  
-   - Scroll down to Manual Deploy, select the desired branch, and click **Deploy Branch**.  
+   - Scroll down to Manual Deploy, select the desired branch, and click Deploy Branch.  
 
 Your Meteor app should now be live on Heroku!
